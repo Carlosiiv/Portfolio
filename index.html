@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Roboto+Slab|Source+Sans+Pro|Source+Serif+Pro&display=swap" rel="stylesheet">
+  </head>
+    <body>
+       <header>
+
+            <nav  class="navbar navbar-dark bg-dark">
+
+                    <!-- nav-pic -->
+
+                    <img src="img\placeholder.jpg" class="nav-logo" alt="logo">
+
+                    <!-- nav-animated-icon -->
+
+                    <a href="#"><div id="wrapper">
+                         <div class="circle icon">
+                            <span class="line top"></span>
+                            <span class="line middle"></span>
+                            <span class="line bottom"></span>
+                        </div>
+                      </div></a>
+            </nav>
+
+                    <!-- navigation links -->
+            <nav class="navbar-expand">
+                <ul class="nav nav-tabs justify-content-end collapse">
+                    <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">PROJECTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">ABOUT ME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CONTACTS</a></li>
+                </ul>
+            </nav>
+
+       </header>
+
+       <div class="container">
+           <div class="row">
+                <h1 class="col text-center display-1 jumbotron">Carlos' Portfolio</h1>
+           </div>
+           <div class="row">
+                <section class=" text-center col "><h3 class="display-3">Projects</h3>
+                    <div id="box" class="row border border-primary">
+                        <div id="flex1" class="box border border-primary ">
+                            <a href="#"><img class=" box img-fluid" src="img\Pacman_Game.jpg" alt="pacman"></a>   
+                        </div>
+                        <div id="flex3" class="box border border-primary">
+                            <a href="#"><img class=" box img-fluid" src="img\Pacman_Game.jpg" alt="pacman"></a>   
+                        </div>
+                        <div id="flex2" class="box border border-primary">
+                            <a href="#"><img class=" box img-fluid" src="img\Pacman_Game.jpg" alt="pacman"></a>   
+                        </div>
+                    </div>
+                </section>
+            </div>
+           <div class="row section">
+                <section class=" text-center col display-3">Contact
+                    <div class="row">
+                        <div id="flex1" class="col border border-primary">Contact Page
+                            <div class="row">
+                                <div class="col border border-info">Social Media</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+           </div>
+        <div class="row section">
+                <section class=" text-center col display-3">About Me
+                    <div class="row">
+                        <div id="flex1" class="col border border-primary">Information</div>
+                    </div>
+                </section>
+        </div>
+       </div>
+
+      
+
+        <script>
+            $("#wrapper").click( function() {
+	            $(".icon").toggleClass("close");
+                
+            });
+            $("#wrapper").click(function(){
+                $("ul.nav").toggle(500);
+                
+            });
+            $('.box').hover(function(){
+                $(this).addClass('active');
+                $('.box:not(.active)').addClass('shrink');
+                }, function() {
+                $(this).removeClass('active');
+                $('.box').removeClass('shrink');
+            });
+            
+        </script>
+    </body>
+</html>

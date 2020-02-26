@@ -1,0 +1,93 @@
+.nav-logo{
+    width: 125px;
+    display:inline-block;
+	border-radius:250px;
+	margin:10px;
+	position: relative;
+  	padding:25px;
+	cursor:pointer;
+
+}
+/* nav icon btn */
+#wrapper {
+	background:#559999;
+	display:inline-block;
+	border-radius:250px;
+	margin:10px;
+	position: relative;
+  	padding:25px;
+	cursor:pointer;
+}
+.circle {
+	width:25px;
+	height:25px;
+	position:relative;
+}
+.line {
+	position: absolute;
+	height: 6px;
+	width:100%;
+	background:white;
+	border-radius:4px;
+	transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
+}
+.top {
+	top:18%;
+}
+.middle {
+	top:48%;
+}
+.bottom {
+	top:78%;
+}
+.icon.close .top {
+	transform:rotate(45deg);
+	top:48%;
+}
+.icon.close .middle, .icon.close .bottom {
+	transform:rotate(-45deg);
+	top:48%;
+}
+
+/* nav icon btn  */
+nav ul li{
+    text-decoration-color: black; 
+}
+
+.display-1 {
+    text-shadow: 2px 2px 2px grey;
+    
+  }
+.col{
+    margin: 20px
+}
+h1.jumbotron{
+    border-radius: 50px;
+}
+.img-fluid{
+    border-radius: 160px;
+}
+ /* test */
+.box {
+    transition: all 500ms ease;
+    flex: 1;
+}
+
+.row-start {
+    clear: left;
+}
+
+.box.active {
+    border-radius: 0px;
+    background: red;
+    flex: 3;
+}
+
+.box.shrink {
+    width: 400px;
+}
+#welcome.active{
+    border-radius: 0;
+    background:blue;
+    flex:3
+}
